@@ -61,5 +61,66 @@ public class Main {
         int quantityOfCansWith_WhitePaint = totalClasses * quantityOfCansWith_WhitePaintForOneClass;
         int quantityOfCansWith_BrownPaint = totalClasses * quantityOfCansWith_BrownPaintForOneClass;
         System.out.println( "В школе, где " + totalClasses + " классов, нужно " + quantityOfCansWith_WhitePaint + " белой краски и " + quantityOfCansWith_BrownPaint + " коричневой краски.");
+
+        //Задача 6
+        System.out.println("Задача 6");
+        byte quantityOfBananas = 5;
+        byte weightOfOneBanana = 80;
+        int weightOfBananas = quantityOfBananas * weightOfOneBanana;
+
+        short milkVolume = 200;
+        byte weightOf100MlOfMilk = 105;
+        byte volumeOf105GrOfMilk = 100;
+        int weightOfMilk = (milkVolume / volumeOf105GrOfMilk) * weightOf100MlOfMilk;
+
+        byte quantityOfIceCreamBriquette = 2;
+        byte weightOfOneBriquetteOfIceCream = 100;
+        int weightOfIceCreamBriquettes = quantityOfIceCreamBriquette * weightOfOneBriquetteOfIceCream;
+
+        byte quantityOfRawEggs = 4;
+        byte weightOfOneRawEgg = 70;
+        int weightOfRawEggs = quantityOfRawEggs * weightOfOneRawEgg;
+
+        int weightOfBreakfastOfGr = (weightOfBananas + weightOfMilk + weightOfIceCreamBriquettes + weightOfRawEggs);
+        System.out.println("Вес завтрака спортсмена составляет " + weightOfBreakfastOfGr + " грамм.");
+
+        int grPerKg = 1000;
+        float weightOfBreakfastOfKg = weightOfBreakfastOfGr / (float)grPerKg;
+        System.out.println("Вес завтрака спортсмена составляет " + weightOfBreakfastOfKg + " килограмм.");
+
+        //Задача 7
+        System.out.println("Задача 7");
+        byte weightLossOfSportsmanOfKg = 7;
+        int weightLossOfSportsmanOfGr =  weightLossOfSportsmanOfKg * grPerKg;
+
+        short weightLossOfSportsmanInOneDayOfGr = 250;
+        int dietDaysOfSportsman = weightLossOfSportsmanOfGr / weightLossOfSportsmanInOneDayOfGr;
+        System.out.println("Если спортсмен будет сбрасывать " + weightLossOfSportsmanInOneDayOfGr +  " грамм каждый день, то его диета займёт " + dietDaysOfSportsman + " дней.");
+
+        short weightLossOfSportsmanInOneDayOfGr2 = 500;
+        int dietDaysOfSportsman2 = weightLossOfSportsmanOfGr / weightLossOfSportsmanInOneDayOfGr2;
+        System.out.println("Если спортсмен будет сбрасывать " + weightLossOfSportsmanInOneDayOfGr2 +  " грамм каждый день, то его диета займёт " + dietDaysOfSportsman2 + " дней.");
+
+        int averageOfDietDaysOfSportsman = (dietDaysOfSportsman + dietDaysOfSportsman2) / 2;
+        System.out.println("Чтобы добиться результата похудения спортсмена, потребуется в среднем " + averageOfDietDaysOfSportsman + " день.");
+
+        //Задача 8
+        System.out.println("Задача 8");
+        int SalaryOfMashaInMonth = 67760;
+        int SalaryOfDenisInMonth = 83690;
+        int SalaryOfKristinaInMonth = 76230;
+        byte percentageOfSalaryIncrease = 10;
+
+        float SalaryIncreaseOfMashaInMonth = ((percentageOfSalaryIncrease / (float) 100) *  SalaryOfMashaInMonth) + SalaryOfMashaInMonth;
+        long SalaryIncreaseOfMashaInYear =  (long)(SalaryIncreaseOfMashaInMonth * 12) - (SalaryOfMashaInMonth * 12);
+        System.out.println("Маша теперь получает " + (int) SalaryIncreaseOfMashaInMonth + " рублей." + " Годовой доход вырос на "  + SalaryIncreaseOfMashaInYear + " рублей.");
+
+        float SalaryIncreaseOfDenisInMonth = ((percentageOfSalaryIncrease / (float) 100) *  SalaryOfDenisInMonth) + SalaryOfDenisInMonth;
+        long SalaryIncreaseOfDenisInYear =  (long)(SalaryIncreaseOfDenisInMonth * 12) - (SalaryOfDenisInMonth * 12);
+        System.out.println("Денис теперь получает " + (int) SalaryIncreaseOfDenisInMonth + " рубля." + " Годовой доход вырос на "  + SalaryIncreaseOfDenisInYear + " рублей.");
+
+        float SalaryIncreaseOfKristinaInMonth = ((percentageOfSalaryIncrease / (float) 100) *  SalaryOfKristinaInMonth) + SalaryOfKristinaInMonth;
+        long SalaryIncreaseOfKristinaInYear =  (long)(SalaryIncreaseOfKristinaInMonth * 12) - (SalaryOfKristinaInMonth * 12);
+        System.out.println("Кристина теперь получает " + (int) SalaryIncreaseOfKristinaInMonth + " рубля." + " Годовой доход вырос на "  + SalaryIncreaseOfKristinaInYear + " рублей.");
     }
 }
